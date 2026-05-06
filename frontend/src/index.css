@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-darkBg text-white font-sans overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .neon-text-red {
+    text-shadow: 0 0 10px rgba(229, 0, 0, 0.8), 0 0 20px rgba(229, 0, 0, 0.4);
+  }
+  .neon-text-blue {
+    text-shadow: 0 0 10px rgba(15, 43, 132, 0.8), 0 0 20px rgba(15, 43, 132, 0.4);
+  }
+  .neon-border-red {
+    box-shadow: 0 0 10px rgba(229, 0, 0, 0.5);
+    border-color: rgba(229, 0, 0, 0.8);
+  }
+  .neon-border-blue {
+    box-shadow: 0 0 10px rgba(15, 43, 132, 0.5);
+    border-color: rgba(15, 43, 132, 0.8);
+  }
+}
